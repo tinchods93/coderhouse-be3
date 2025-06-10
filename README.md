@@ -18,7 +18,7 @@
 
 1. Clona el repositorio:
    ```bash
-   git clone <url-del-repo>
+   git clone https://github.com/tinchods93/coderhouse-be3
    ```
 2. Instala las dependencias:
    ```bash
