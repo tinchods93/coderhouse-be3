@@ -25,6 +25,19 @@
    npm install
    ```
 
+## Docker
+
+Puedes utilizar la imagen de Docker disponible en:
+
+[Enlace a la imagen de Docker](https://hub.docker.com/r/martinds93/coderhouse-be3)
+
+Para ejecutar el proyecto con Docker:
+
+```bash
+docker pull martinds93/coderhouse-be3
+docker run -p 8080:8080 martinds93/coderhouse-be3
+```
+
 ## Uso
 
 1. Inicia el servidor:

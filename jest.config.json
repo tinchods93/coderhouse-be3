@@ -1,0 +1,8 @@
+{
+  "testEnvironment": "node",
+  "transform": {},
+  "maxWorkers": 1,
+  "testMatch": [
+    "**/tests/**/*.test.js"
+  ]
+}

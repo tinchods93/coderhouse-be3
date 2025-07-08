@@ -98,7 +98,7 @@ const mockingUsers = async (req, res) => {
   // devolver 50 usuarios mockeados
   const mockedUsers = [];
   for (let i = 0; i < 50; i++) {
-    mockedUsers.push(UserDTO.getUserMock(true));
+    mockedUsers.push(UserDTO.getUserMock());
   }
   res.send({ status: 'success', payload: mockedUsers });
 };

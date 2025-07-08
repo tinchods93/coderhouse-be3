@@ -5,8 +5,12 @@ import {
 } from '../services/index.js';
 
 const getAllAdoptions = async (req, res) => {
-  const result = await adoptionsService.getAll();
-  res.send({ status: 'success', payload: result });
+  try {
+    const result = await adoptionsService.getAll();
+    res.send({ status: 'success', payload: result });
+  } catch (error) {
+    res.status(500).send({ status: 'error', error: error.message });
+  }
 };
 
 const getAdoption = async (req, res) => {

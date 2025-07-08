@@ -9,19 +9,15 @@ export default class UserDTO {
     };
   };
 
-  static getUserMock = (complete = false) => {
+  static getUserMock = () => {
     const mock = {
       first_name: faker.person.firstName(),
       last_name: faker.person.lastName(),
       password: 'coder123',
       email: faker.internet.email(),
       role: faker.datatype.boolean() ? 'user' : 'admin',
+      id: faker.database.mongodbObjectId(),
     };
-
-    if (complete) {
-      mock.id = faker.string.uuid();
-      mock.__v = 0;
-    }
 
     return mock;
   };
